@@ -38,15 +38,16 @@ const Container = () => {
   };
 
   return (
-    <>
+    <div className="todo">
       <Counter list={list} />
       <Form handleAddItem={handleAddItem} />
+      <br /><br />
       <Tasklist
         list={list}
         handleDelete={deleteItem}
         handleCheck={toggleDone}
       />
-    </>
+    </div>
   );
 };
 

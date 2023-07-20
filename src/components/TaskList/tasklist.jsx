@@ -1,5 +1,5 @@
 import ListItem from "../listItem";
-import "./list.css";
+import "./tasklist.css";
 
 const Tasklist = ({ list, handleDelete, handleCheck }) => {
   console.log("dentro", list);
@@ -13,7 +13,7 @@ const Tasklist = ({ list, handleDelete, handleCheck }) => {
   ));
 
   return (
-    <div className="task-list">
+    <div>
       {list.length ? <div className="list">{tareas}</div> : "No hay Tareas"}
 
       {/* {list.length ? (

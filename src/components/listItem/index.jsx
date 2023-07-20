@@ -1,3 +1,5 @@
+import "./list.css";
+
 const ListItem = (prop) => {
   const {
     handleDelete,
@@ -6,7 +8,7 @@ const ListItem = (prop) => {
   } = prop;
 
   return (
-    <div>
+    <div className="container-tasks">
       <input
         className="input"
         name={id}
@@ -20,8 +22,8 @@ const ListItem = (prop) => {
 
       <p className="todo__text">{task}</p>
 
-      <button onClick={handleDelete} variant="primary">
-        Delete
+      <button className="btnDelete" onClick={handleDelete} variant="primary">
+      🗑️
       </button>
     </div>
   );

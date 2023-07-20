@@ -1,0 +1,20 @@
+.container-count {
+  display: flex;
+  padding: 25px;
+  text-align: center;
+  justify-content: center;
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 50%;
+ width: 10%;
+  margin-right: 20px;
+ 
+}
+
+

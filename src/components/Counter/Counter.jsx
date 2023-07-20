@@ -1,4 +1,6 @@
 import React from "react";
+import "./counter.css"
+
 const Counter = ({ list }) => {
   var count = 0;
   for (let i = 0; i < list.length; i++) {
@@ -8,7 +10,12 @@ const Counter = ({ list }) => {
     }
   }
 
-  return <div className="count">{count}</div>;
+  return (
+    <div className="container-count">
+      <div className="count">{count}</div>
+      <p>Tareas Completadas</p>
+    </div>
+  );
 };
 
 export default Counter;
